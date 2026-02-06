@@ -1,0 +1,57 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  /* PINK THEME */
+  background: #1a001a; /* dark pink-purple background */
+  color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 0, 150, 0.4);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+/* PINK glow */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ff4da6);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #ff1493);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: rgba(255, 20, 147, 0.12); /* transparent pink */
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(255, 20, 147, 0.35);
+  margin-top: 20px;
+  border: 1px solid rgba(255, 20, 147, 0.3);
+}
+
+.read-the-docs {
+  color: #ff99cc;
+  font-size: 14px;
+}
